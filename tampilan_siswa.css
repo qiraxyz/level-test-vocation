@@ -1,0 +1,32 @@
+/* .sidenav {
+    height: 100%;
+    width: 160px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: block;
+  }*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.sidenav {
+    background-color: #2D2C2C;
+    width: 200px;
+    height: 100vh;
+    display: block;
+}
+
+.container {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.container table {
+    width: 1000px;
+}
