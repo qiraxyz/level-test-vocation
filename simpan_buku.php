@@ -3,12 +3,12 @@
 
 
     if (isset($_POST ['simpan_buku'])) {
-        $id = $_POST['id'];
+        $id_buku = $_POST['id_buku'];
         $kode_jenis = $_POST['kode_jenis'];
         $nama_buku = $_POST['nama_buku'];
         $stok = $_POST['stok'];
     
-        $sql = "INSERT INTO perpus(id, kode_jenis, nama_buku, stok) VALUES('$id', '$kode_jenis',
+        $sql = "INSERT INTO buku(id_buku, kode_jenis, nama_buku, stok) VALUES('$id_buku', '$kode_jenis',
         '$nama_buku', '$stok') "; 
         $query = mysqli_query($connect, $sql);
 

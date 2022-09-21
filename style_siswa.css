@@ -27,7 +27,6 @@ body {
 .sidenav a {
     text-decoration: none;
     color: white;
-    margin: 0;
 }
 .sub-sidebar button{
     position: relative;
@@ -48,54 +47,62 @@ body {
     text-decoration: none;
     color: white;
 }
-.form {
+.container {
     position: absolute;
-    display: flex;
-    top: 30%;
-    left: 30%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.445);
-    width: 700px;
+    top: 20%;
+    left: 20%;
 }
-.form label {
-    position: relative;
-    top: 10px;
-    left: 15px;
-    margin: 0;
-    padding: 0;
+.container a {
+    color: black;
 }
-.form input {
-    display: flex;
-    position: relative;
-    left: 100px;
-    top: -23px;
-    width: 500px;
-    height: 28px;
-    border-radius: 6px;
+.container table {
+    border: 2px solid black;
+    width: 1000px;
+    height: 150px;
+}
+.container table tr th {
+    border: 1px solid black;
+    background-color: #2D2C2C;
+    color: white;
+}
+.container table tr td {
+    border: 1px solid black;
+    background-color: #ffffff;
+    text-align: center;
+}
+.container button:first-child{
+    background-color: #61f11e;
+    font-size: 13px;
     border: none;
-    background-color: #4646461e;
+    position: relative;
+    border-radius: 12px;
+    left: -10px;
+    padding: 5px 22px;
 }
-.form button {
+.container button:last-child{
+    background-color: #697184;
+    font-size: 13px;
+    border: none;
+    position: relative;
+    border-radius: 12px;
+    left: 10px;
+    padding: 5px 15px;
+}
+.container button a {
+    color: white;
+    text-decoration: none;
+}
+.create a{
     position: relative;
     float: right;
     border-radius: 15px;
     background-color: #61f11e;
     color: white;
-    padding: 10px 40px;
+    padding: 5px 20px;
     text-decoration: none;
-    border: none;
-    top: -25px;
-    left: 140px;
 }
-.form .btn-cancel {
-    position: relative;
-    left: 120px;
-    background-color: #464646;
-}
-.form button a {
-    text-decoration: none;
-    color: white;
+.create a:hover {
+    background-color: #61f11e7c;
 }
 .status {
     position: absolute;

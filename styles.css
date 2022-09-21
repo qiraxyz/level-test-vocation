@@ -31,7 +31,7 @@ body {
 }
 .sub-sidebar button{
     position: relative;
-    background-color: #46B412;
+    background-color: #464646;
     width: 178px;
     height: 49px;
     left: 21px;
@@ -39,7 +39,7 @@ body {
     margin-bottom: 20px;
 }
 .sub-sidebar button:nth-of-type(2){
-    background-color:  #464646;
+    background-color:  #46B412 ;
 }
 .sub-sidebar button:hover {
     background-color: #46B412;

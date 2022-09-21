@@ -5,15 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Perpus</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="simpan_buku.php" method="POST">
-        <p><label>Id :<input required="required" type="text" name="id"></label></p>
-        <p><label>Kode Jenis :<input required="required" type="text" name="kode_jenis"></label></p>
-        <p><label>Nama Buku :<input required="required" type="text" name="nama_buku"></label></p>
-        <p><label>Stok :<input required="required" type="number" name="stok"></label></p>
-        <p><input type="submit" name="simpan_buku" value="simpan_buku"></p>
-    </form>
+    <div class="sidenav">
+        <div class="sidenav-flex">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLNaZDoG-h9StNiUMzornW4HLdzYHZyXQ7Q&usqp=CAU" alt="">
+        <a href="https://qiraxyz.000webhostapp.com/" class="">Qiraxyz</a>
+        </div>
+        <div class="sub-sidebar">
+        <hr>
+          <button><a href="tampilan_siswa.php">Data Siswa</a></button>
+          <br>  
+          <button><a href="tampilan_buku.php">Data Buku</a></button>
+        </div>
+        <div class="status">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/IRIB_Mazandaran_White_Logo.png/600px-IRIB_Mazandaran_White_Logo.png?20200114152038" alt="">
+          <p>Powered by Qiraxyz</p>
+        </div>
+      </div>
+      <div class="form">
+        <form action="simpan_buku.php" method="POST">
+          <p><label>Id :<input required="required" type="text" name="id_buku"></label></p>
+          <p><label>Kode Jenis :<input required="required" type="text" name="kode_jenis"></label></p>
+          <p><label>Nama Buku :<input required="required" type="text" name="nama_buku"></label></p>
+          <p><label>Stok :<input required="required" type="number" name="stok"></label></p>
+          <br>
+          <br>
+          <button type="submit" name="simpan_buku" value="simpan_buku">Create</button>
+          <button class="btn-cancel"><a href="tampilan_buku.php">Cancel</a></button>
+      </form>
+      </div>
 </body>
 </html>

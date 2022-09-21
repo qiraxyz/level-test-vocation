@@ -6,14 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Perpus</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="simpan_siswa.php" method="POST">
-        <p><label>Id Siswa :<input required="required" type="text" name="id_siswa"></label></p>
-        <p><label>Nama :<input required="required" type="text" name="nama"></label></p>
-        <p><label>kelas :<input required="required" type="text" name="kelas"></label></p>
-        <p><label>Jurusan :<input required="required" type="text" name="jurusan"></label></p>
-        <p><input type="submit" name="simpan_siswa" value="simpan_siswa"></p>
-    </form>
+  <div class="sidenav">
+    <div class="sidenav-flex">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLNaZDoG-h9StNiUMzornW4HLdzYHZyXQ7Q&usqp=CAU" alt="">
+    <a href="https://qiraxyz.000webhostapp.com/" class="">Qiraxyz</a>
+    </div>
+    <div class="sub-sidebar">
+    <hr>
+      <button><a href="tampilan_siswa.php">Data Siswa</a></button>
+      <br>  
+      <button><a href="tampilan_buku.php">Data Buku</a></button>
+    </div>
+    <div class="status">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/IRIB_Mazandaran_White_Logo.png/600px-IRIB_Mazandaran_White_Logo.png?20200114152038" alt="">
+      <p>Powered by Qiraxyz</p>
+    </div>
+  </div>
+      <div class="form">
+        <form action="simpan_siswa.php" method="POST">
+          <p><label>Id Siswa :<input required="required" type="text" name="id_siswa"></label></p>
+          <p><label>Nama :<input required="required" type="text" name="nama"></label></p>
+          <p><label>kelas :<input required="required" type="text" name="kelas"></label></p>
+          <p><label>Jurusan :<input required="required" type="text" name="jurusan"></label></p>
+          <br>
+          <br>
+          <button type="submit" name="simpan_siswa" value="simpan_siswa">Create</button>
+          <button class="btn-cancel"><a href="tampilan_siswa.php">Cancel</a></button>
+        </form>
+      </div>
+      
 </body>
 </html>

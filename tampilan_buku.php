@@ -9,36 +9,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tampilan data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <style>
+      <?php 
+        include 'style_buku.css';
+      ?>
+    </style>
 </head>
 <body>
+<div class="sidenav">
+  <div class="sidenav-flex">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLNaZDoG-h9StNiUMzornW4HLdzYHZyXQ7Q&usqp=CAU" alt="">
+  <a href="https://qiraxyz.000webhostapp.com/" class="">Qiraxyz</a>
+  </div>
+  <div class="sub-sidebar">
+  <hr>
     <button><a href="tampilan_siswa.php">Data Siswa</a></button>
+    <br>
     <button><a href="tampilan_buku.php">Data Buku</a></button>
-    <table border="1">
-        <h3>Data Siswa</h3>
-        <h4><a href="buku.html">Create</a></h4>
+  </div>
+  <div class="status">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/IRIB_Mazandaran_White_Logo.png/600px-IRIB_Mazandaran_White_Logo.png?20200114152038" alt="">
+    <p>Powered by Qiraxyz</p>
+  </div>
+</div>
+  <div class="container">
+  <table border="1">
+        <h3>Data Buku</h3>
         <tr>
-            <td>Id</td>
-            <td>kode Jenis</td>
-            <td>Nama Buku</td>
-            <td>Stok</td>
-            <td>Action</td>
+            <th>Id</th>
+            <th>kode Jenis</th>
+            <th>Nama Buku</th>
+            <th>Stok</th>
+            <th>Action</th>
         </tr>
         <?php
-        $sql = "SELECT * FROM perpus";
+        $sql = "SELECT * FROM buku";
         $query = mysqli_query($connect,$sql);
 
         while ($buk = (mysqli_fetch_array($query))) {
         echo "<tr>";
-        echo "<td>". $buk ['id']. "</td>";
+        echo "<td>". $buk ['id_buku']. "</td>";
         echo "<td>". $buk ['kode_jenis']. "</td>";
         echo "<td>". $buk ['nama_buku']. "</td>";
         echo "<td>". $buk ['stok']. "</td>";
-        echo "<td>". "<button>". "<a href='editform_buku.php?id=".$buk['id']."'>Edit</a>" . "</button>";
-        echo "<button>". "<a href='hapus_buku.php?id=".$buk['id']."'>Hapus</a>". "</button>"; 
+        echo "<td>". "<button>". "<a href='editform_buku.php?id_buku=".$buk['id_buku']."'>edit</a>" . "</button>";
+        echo "<button>". "<a href='hapus_buku.php?id_buku=".$buk['id_buku']."'>delete</a>". "</button>"; 
         echo "</td>";
         echo "</tr>";
         }
         ?>
     </table>
+    <br>
+    <div class="create"><a href="buku.html">Create</a></div>
+  </div>
+    
 </body>
 </html>

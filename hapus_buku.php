@@ -1,9 +1,9 @@
 <?php
     include 'koneksi.php';
      
-    $id = $_GET['id'];
+    $id_buku = $_GET['id_buku'];
 
-    $sql = "DELETE FROM perpus WHERE id='$id'";
+    $sql = "DELETE FROM buku WHERE id_buku='$id_buku'";
     $query = mysqli_query($connect, $sql);
 
     
